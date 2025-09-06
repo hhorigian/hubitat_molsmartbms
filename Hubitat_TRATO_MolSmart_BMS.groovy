@@ -13,6 +13,7 @@
  *  for the specific language governing permissions and limitations under the License.
  *        
  *        1.0 18/2/2025  - V.BETA 1 - Driver for MolSmart BMS - Modo Local. 
+ *        1.1 06/9/2025  - Fixed commands
 *
  */
 
@@ -158,27 +159,27 @@ def getStatus() {
     }
 }
 
-def relay1On() {
+def Relay1_On() {
     sendCommand("Power1", "on")
 }
 
-def relay1Off() {
+def Relay1_Off() {
     sendCommand("Power1", "off")
 }
 
-def relay2On() {
+def Relay2_On() {
     sendCommand("Power2", "on")
 }
 
-def relay2Off() {
+def Relay2_Off() {
     sendCommand("Power2", "off")
 }
 
-def toggleRelay1() {
+def ToggleRelay_1() {
     sendCommand("Power1", "toggle")
 }
 
-def toggleRelay2() {
+def ToggleRelay_2() {
     sendCommand("Power2", "toggle")
 }
 
